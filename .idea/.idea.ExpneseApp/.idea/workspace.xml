@@ -13,16 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc55921a-fd6d-4831-8457-f780498611ed" name="Default Changelist" comment="added project setup">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExpneseApp/Models/Expense.cs" afterDir="false" />
+    <list default="true" id="cc55921a-fd6d-4831-8457-f780498611ed" name="Default Changelist" comment="created expense class">
+      <change beforePath="$PROJECT_DIR$/ExpneseApp/ExpneseApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ExpneseApp/ExpneseApp.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611790220468</updated>
-      <workItem from="1611790224943" duration="378000" />
+      <workItem from="1611790224943" duration="762000" />
     </task>
     <task id="LOCAL-00001" summary="added project setup">
       <created>1611790253606</created>
@@ -101,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611790253607</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created expense class">
+      <created>1611790624758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611790624758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,17 +122,18 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="added project setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="added project setup" />
+    <MESSAGE value="created expense class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created expense class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1154" y="602" width="501" height="196" key="Github.ShareDialog" timestamp="1611790319543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1154" y="602" width="501" height="196" key="Github.ShareDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1611790319543" />
-    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1611790220459">
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1611790986703">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1611790220459" />
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1611790986703" />
     <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1611790351627">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

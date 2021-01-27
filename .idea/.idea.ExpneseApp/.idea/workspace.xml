@@ -13,10 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc55921a-fd6d-4831-8457-f780498611ed" name="Default Changelist" comment="added package files">
-      <change afterPath="$PROJECT_DIR$/ExpneseApp/Data/ApplicationDBContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="cc55921a-fd6d-4831-8457-f780498611ed" name="Default Changelist" comment="added database connection">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ExpneseApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpneseApp/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ExpneseApp/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,8 @@
       <list>
         <option value="$PROJECT_DIR$/ExpneseApp/Models/Expense.cs" />
         <option value="$PROJECT_DIR$/ExpneseApp/Data/ApplicationDBContext.cs" />
+        <option value="$PROJECT_DIR$/ExpneseApp/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/ExpneseApp/Startup.cs" />
       </list>
     </option>
   </component>
@@ -87,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611790220468</updated>
-      <workItem from="1611790224943" duration="1384000" />
+      <workItem from="1611790224943" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="added project setup">
       <created>1611790253606</created>
@@ -110,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611791233834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added database Class">
+      <created>1611791638275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611791638275</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added database connection">
+      <created>1611791712018</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611791712018</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +149,9 @@
     <MESSAGE value="added project setup" />
     <MESSAGE value="created expense class" />
     <MESSAGE value="added package files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package files" />
+    <MESSAGE value="added database Class" />
+    <MESSAGE value="added database connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added database connection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1154" y="602" width="501" height="196" key="Github.ShareDialog" timestamp="1611790319543">
@@ -145,9 +162,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1611790986703" />
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1611791240533">
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1611791779098">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1611791240533" />
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1611791779098" />
   </component>
 </project>

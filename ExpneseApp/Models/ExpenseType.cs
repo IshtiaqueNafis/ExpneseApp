@@ -9,6 +9,6 @@ namespace ExpneseApp.Models
     public class ExpenseType
     {
       [Key]  public int Id { get; set; }
-      public string ExpenseCategory { get; set; }
+      [Required]public string ExpenseCategory { get; set; }
     }
 }

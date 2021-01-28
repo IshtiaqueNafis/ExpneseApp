@@ -21,8 +21,7 @@
     <thead>
     <tr>
         <th scope="col">ID</th>
-        <th scope="col">Expense</th>
-        <th scope="col">Cost</th>
+        <th scope="col">Expense Type</th>
         <th scope="col">Crud Application</th>
     </tr>
     </thead>
@@ -37,9 +36,9 @@
             <td width="30%">@expense.ExpenseType</td>
             <td width="30%">@expense.Cost</td>
             <td width="40%">
-                <a asp-controller="Expense" asp-action="Update" asp-route-Id="@expense.Id" class="btn btn-primary" mx-1>Update</a>
-
-                <a asp-controller="Expense" asp-action="Delete" asp-route-Id="@expense.Id" class="btn btn-danger" mx-1>Delete</a>
+                <a asp-controller="ExpenseType" asp-action="Update" asp-route-Id="@expense.Id" class="btn btn-primary" mx-1>Update</a>
+                                           
+                <a asp-controller="ExpenseType" asp-action="Delete" asp-route-Id="@expense.Id" class="btn btn-danger" mx-1>Delete</a>
                 <!-- in the asp-route-Id="expense.Id" is there to get the id  -->
             </td>
             

@@ -84,7 +84,40 @@ namespace ExpneseApp.Controllers
             return View(expenseObject);
         }
 
-        
+        // get update method 
+        public IActionResult Update(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound(); // if null or 0 no id found 
+            }
+
+
+            var expenseObject = _db.Expenses.Find(id); // find id in the database
+            if (expenseObject == null)
+            {
+                return NotFound();
+            }
+
+            return View(expenseObject);
+        }
+
+        // post method
+        //post update 
+        [HttpPost] // says this is post 
+        [ValidateAntiForgeryToken] //this makes it secure
+        public IActionResult Update(Expense expense) // no issue here cause both method are the same 
+        {
+            if (ModelState.IsValid) // this checks for if the input is correct or not. 
+            {
+                _db.Expenses.Update(expense);
+                _db.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+
+            return RedirectToAction("Index");
+        }
 
 
 

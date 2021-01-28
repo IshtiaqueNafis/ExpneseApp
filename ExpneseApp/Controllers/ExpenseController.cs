@@ -44,5 +44,49 @@ namespace ExpneseApp.Controllers
 
             return RedirectToAction("Index");
         }
+
+
+        //post delete 
+        [HttpPost] // says this is post 
+        [ValidateAntiForgeryToken] //this makes it secure
+        public IActionResult DeletePost(int? id)
+        {
+            var expenseObject = _db.Expenses.Find(id); // find id in the database
+
+            if (expenseObject == null) // if data is not found return not found
+            {
+                return NotFound();
+
+            }
+            _db.Expenses.Remove(expenseObject); // this removes data frome expnese
+            _db.SaveChanges(); // this saves data from db.save changes updates database 
+            return RedirectToAction("Index");
+        }
+
+
+
+
+        //get delete 
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound(); // if null or 0 no id found 
+            }
+
+
+            var expenseObject = _db.Expenses.Find(id); // find id in the database
+            if (expenseObject == null)
+            {
+                return NotFound();
+            }
+
+            return View(expenseObject);
+        }
+
+        
+
+
+
     }
 }

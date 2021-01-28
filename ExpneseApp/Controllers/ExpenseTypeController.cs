@@ -89,7 +89,8 @@ namespace ExpneseApp.Controllers
 
             return View(expenseTypeObject);
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Update(ExpenseType expenseType) // no issue here cause both method are the same 
         {
             if (ModelState.IsValid) // this checks for if the input is correct or not. 

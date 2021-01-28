@@ -11,7 +11,9 @@
 <div class="row">
     <div class="col-md-4">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <!-- if asp-validation-summary="All" it will show all errors at the top  -->
+        <!-- if asp-validation-summary="All" it will show all errors at the top  
+        even if this line is commented the validation will work fine without any problem. 
+        -->
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -35,6 +37,8 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@section Scripts
+{
+    @{<partial name="_ValidationScriptsPartial"/>}
+    <!-- this is the client side validation-->
 }

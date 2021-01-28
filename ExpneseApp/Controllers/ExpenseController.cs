@@ -23,5 +23,21 @@ namespace ExpneseApp.Controllers
             //IEnumerable is a interface that supports collection 
             return View(expenseObject);
         }
+
+        public IActionResult Create()
+        {
+
+            return View();
+        }
+        //post create
+        [HttpPost] // says this is post 
+        [ValidateAntiForgeryToken] //this makes it secure
+        public IActionResult Create(Expense expense)
+        {
+            _db.Expenses.Add(expense);
+            _db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }

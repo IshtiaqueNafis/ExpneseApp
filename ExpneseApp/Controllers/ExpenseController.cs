@@ -34,8 +34,13 @@ namespace ExpneseApp.Controllers
         [ValidateAntiForgeryToken] //this makes it secure
         public IActionResult Create(Expense expense)
         {
-            _db.Expenses.Add(expense);
-            _db.SaveChanges();
+            if (ModelState.IsValid) // this checks for if the input is correct or not. 
+            {
+                _db.Expenses.Add(expense);
+                _db.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
 
             return RedirectToAction("Index");
         }

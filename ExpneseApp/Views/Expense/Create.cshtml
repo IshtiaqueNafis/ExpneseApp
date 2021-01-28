@@ -10,6 +10,8 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <!-- if asp-validation-summary="All" it will show all errors at the top  -->
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">

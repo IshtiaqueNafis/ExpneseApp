@@ -1,1 +1,46 @@
-﻿@model 
+﻿@model IEnumerable<ExpneseApp.Models.Expense>
+<div class="container">
+    <div class="row pt-4">
+        
+        <div class="col-6">
+            <h2 class="text-primary">Showed all Expenses</h2>
+        </div>
+        <div class="col-6">
+            
+            <a asp-controller="Expense" asp-action="Create" class="btn btn-success">Create New item</a>
+           
+
+
+        </div>
+
+    </div>
+
+</div>
+    
+<table class="table table-dark">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Expense</th>
+        <th scope="col">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+    @foreach (var expense in Model)
+
+    {
+        <tr>
+            <td>@expense.Id</td>
+            <td>@expense.ExpenseType</td>
+            <td>@expense.Cost</td>
+            
+        </tr>
+
+    }
+
+
+
+    </tbody>
+</table>

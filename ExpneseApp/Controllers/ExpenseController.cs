@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ExpneseApp.Data;
+using ExpneseApp.Models;
 
 namespace ExpneseApp.Controllers
 {
@@ -18,8 +19,9 @@ namespace ExpneseApp.Controllers
 
         public IActionResult Index()
         {
-            var objList = _db.Expenses; // getting the expense table
-            return View(objList);
+            IEnumerable<Expense> expenseObject = _db.Expenses;
+            //IEnumerable is a interface that supports collection 
+            return View(expenseObject);
         }
     }
 }
